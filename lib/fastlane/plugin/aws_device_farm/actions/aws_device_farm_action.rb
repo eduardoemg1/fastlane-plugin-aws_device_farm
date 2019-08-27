@@ -150,7 +150,8 @@ module Fastlane
                               'UIAUTOMATION_TEST_PACKAGE',
                               'UIAUTOMATOR_TEST_PACKAGE',
                               'XCTEST_TEST_PACKAGE',
-                              'XCTEST_UI_TEST_PACKAGE']
+                              'XCTEST_UI_TEST_PACKAGE',
+                              'APPIUM_NODE_TEST_PACKAGE']
               raise "Test package type not found valid values are: '#{valid_values}'. 🙈".red unless valid_values.include? value
             end
           ),
@@ -174,7 +175,8 @@ module Fastlane
                               'APPIUM_PYTHON',
                               'BUILTIN_EXPLORER',
                               'XCTEST',
-                              'APPIUM_WEB_JAVA_TESTNG']
+                              'APPIUM_WEB_JAVA_TESTNG',
+                              'APPIUM_NODE']
               raise "Test type not found valid values are: '#{valid_values}'. 🙈".red unless valid_values.include? value
             end
           ),
